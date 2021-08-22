@@ -1,7 +1,14 @@
 {
-  "type": "postgres",
-  "host": "localhost",
-  "username": "docker",
-  "password": "ignite",
-  "database": "rentx"
+  "type": "mysql",
+  "port": 3306,
+  "host": "127.0.0.1",
+  "username": "root",
+  "password": "",
+  "database": "rentx",
+  "entities": ["src/modules/cars/entities/*.ts"],
+  "migrations": ["./src/database/migrations/*.ts"],
+  "cli": {
+    "entitiesDir": "src/modules/cars/entities",
+    "migrationsDir": "./src/database/migrations"
+  }
 }
