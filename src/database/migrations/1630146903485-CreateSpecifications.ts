@@ -9,7 +9,7 @@ export class CreateSpecifications1630146903485 implements MigrationInterface {
             columns: [
               {
                 name: "id",
-                type: "binary",
+                type: "varchar",
                 isPrimary: true
               },
               {
